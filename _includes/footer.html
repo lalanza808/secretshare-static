@@ -1,0 +1,12 @@
+<footer id="footer">
+  <ul class="icons">
+    {% for social in site.social %}
+      <li><a href="{{ social.url }}" target=_blank class="icon fa-{{ social.icon }}"><span class="label"></span></a></li>
+    {% endfor %}
+  </ul>
+  <ul class="copyright">
+    <li><a href="{{ site.copyright_url }}" target=_blank>{{ site.copyright_text }}</a></li>
+    <li><a href="https://html5up.net" target=_blank>Credits</a></li>
+    <li><a href="{{ site.license_path }}" target=_blank>License</a></li>
+  </ul>
+</footer>

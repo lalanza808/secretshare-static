@@ -1,0 +1,13 @@
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/datetimepicker.full.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+{% if page.url == '/' %}
+  <script>
+    $( function() {
+      $( "#secret-expiration" ).datetimepicker({
+        format: 'Y-m-d H:i:s'
+      });
+    } );
+  </script>
+{% endif %}

@@ -1,0 +1,33 @@
+
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "*.gemspec"
+
+
+# Site settings
+title: "Secret Share"
+description: "A site for sharing secrets"
+secret_endpoint: https://xxxxx.execute-api.us-east-1.amazonaws.com/live/secret/
+background: /images/bg03.jpg
+
+# Copyright info
+copyright_text: "Company Name"
+copyright_url: "Company Site"
+license_path: /LICENSE.txt
+
+# Social Media - can remove to not show icons
+social:
+  - url: https://github.com/profile
+    icon: github
+  - url: https://linkedin.com/in/profile
+    icon: linkedin
+  - url: https://instagram.com/profile
+    icon: instagram
+  - url: "mailto:email@domain.com"
+    icon: envelope
+
+# Build settings
+markdown: kramdown
