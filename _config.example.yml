@@ -12,6 +12,7 @@ title: "Secret Share"
 description: "A site for sharing secrets"
 secret_endpoint: https://xxxxx.execute-api.us-east-1.amazonaws.com/live/secret/
 background: /images/bg03.jpg
+baseurl: /secret # no trailing or only slash
 
 # Copyright info
 copyright_text: "Company Name"
