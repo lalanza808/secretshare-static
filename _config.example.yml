@@ -17,7 +17,7 @@ background: images/bg03.jpg # without baseurl
 # Copyright info
 copyright_text: "Company Name"
 copyright_url: "Company Site"
-license_path: /LICENSE.txt
+license_path: LICENSE.txt # without baseurl
 
 # Social Media - can remove to not show icons
 social:
