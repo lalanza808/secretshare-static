@@ -9,11 +9,15 @@
     </div>
     <div class="form-input">
       <input type="text" id="secret-expiration" placeholder="Expiration Date/Time"/>
+      <div class="checkbox">
+        <input type="checkbox" id="secret-expire-on-read">
+        <label for="secret-expire-on-read">Expire on Read</label>
+      </div>
     </div>
     <div class="form-submit">
       <input type="submit" id="secret-submit" value="Create Secret" />
     </div>
   </form>
-  <p id="secret-response"></p>
+
   <a href="/retrieve/"><button class="switch_context">Retrieve Secret -></button></a>
 </div>

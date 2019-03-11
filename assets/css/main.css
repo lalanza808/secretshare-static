@@ -1193,8 +1193,8 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			#footer {
-				bottom: 3.5em;
-				left: 3.5em;
+				bottom: 2em;
+				left: 2em;
 			}
 
 		}
@@ -1229,7 +1229,6 @@ input, select, textarea {
 		}
 
 
-/* Switch Context */
 .switch_context {
 	font-size: 1em;
 	position: absolute;
@@ -1240,5 +1239,24 @@ input, select, textarea {
 }
 
 #secret-response {
-	width: 51%;
+	width: 70%;
+	overflow: auto;
+	border-radius: 8px;
+	border: 1px solid white;
+	background-color: rgb(153, 153, 153, .2);
+	margin-left: .5em;
+	margin-bottom: 2em;
+}
+
+#secret-response p, #secret-response label {
+	margin: 0 !important;
+}
+
+.checkbox {
+	padding: .5em 0 0 1em;
+}
+
+.hidden {
+	visibility: hidden;
+	transition: opacity 2s ease-in-out;
 }
