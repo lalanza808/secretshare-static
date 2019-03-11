@@ -33,6 +33,7 @@ $('#create-secret').on('submit', function(event) {
 			},
 			error: function (res){
 				$('#secret-response').html('Something went wrong: ' + JSON.stringify(res.responseJSON));
+				$('#secret-response').removeClass('hidden');
 			}
 		});
 	}, 750);
@@ -44,7 +45,7 @@ $('#retrieve-secret').on('submit', function(event) {
 	window.setTimeout(function() {
 
 		var token = $('#secret-token').val();
-		
+
 		$.ajax({
 			method: 'GET',
 			url: '{{ site.secret_endpoint }}?token=' + token,
@@ -60,6 +61,7 @@ $('#retrieve-secret').on('submit', function(event) {
 			},
 			error: function (res){
 				$('#secret-response').html('Something went wrong: ' + JSON.stringify(res.responseJSON));
+				$('#secret-response').removeClass('hidden');
 			}
 		})
 	}, 750);
